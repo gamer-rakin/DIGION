@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+<!-----------------------------------stylesheet link-------------------------------------->
+    <link rel="stylesheet" href="style.css">
+<!-----------------------------------fontawsome link-------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<!-----------------------------------fonts link-------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&family=Poppins:wght@200;300;400;500;800&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-----------------------------------navigation_bar-------------------------------------->
+    <header class="header">
+        <div class="header_content">
+            <a href="#" class="logo">
+                SAY IT
+            </a>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a class="btn">NOW</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">Home</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">All Ticket</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">About</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">Contact Us</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="profile.html" class="nav_link">Profile</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-----------------------------------login-body-------------------------------------->
+    <main  class="login_body">
+        <div class="container">
+            <div class="forms">
+                <div class="form_login">
+                    <span class="title">Login</span>
+                    <form action="#" id="form">
+                        <div class="input_field">
+                            <input type="text" id= "std_id" placeholder="Student ID" required>
+                            <i class="fa-solid fa-id-badge icon"></i>
+                        </div>
+                        <div class="input_field" id="hideit">
+                            <input type="password" id= "pass" placeholder="Password" required>
+                            <i class="fa-solid fa-lock icon"></i>
+                        </div>
+                        <div class="input_field">
+                            <a href="#" class="forgot">Forgot password?</a>
+                        </div>
+                        <div class="input_field">
+                            <button class="login_btn" onclick="hidePassword()">Login</button>
+                        </div>
+                        <div class="sign_up" style="margin-top: 10px;">
+                            <span class="nam">Not a member?</span>
+                            <a href="student_sign_up.html" class="sign_up_link">Sign up</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

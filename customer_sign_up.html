@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign_up</title>
+<!-----------------------------------stylesheet link-------------------------------------->
+    <link rel="stylesheet" href="style.css">
+<!-----------------------------------fontawsome link-------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<!-----------------------------------fonts link-------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;900&family=Poppins:wght@200;300;400;500;800&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-----------------------------------navigation_bar-------------------------------------->
+<header class="header">
+    <div class="header_content">
+        <a href="index.html" class="nav_item" onclick="redirectToHome()">
+            <img src="logo.png" alt="DIGION">
+        </a>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <div class="input_field">
+                        <form id="form" class="search">
+                            <input type="search" id= "search" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass icon"></i>
+                        </form>
+                    </div>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Best Deal</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Blogs</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#" class="nav_link">About</a>
+                </li>
+                <li class="nav_item">
+                    <a href="customer-profile.html" class="nav_link">
+                        <i class="fa-regular fa-circle-user"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-----------------------------------sign up body-------------------------------------->
+    <div  class="sign_up_body">
+        <div class="container">
+            <div class="forms">
+                <div class="form_sign_up">
+                    
+                    <span class="title-sign-up">Sign Up</span>
+                    <form action="#" id="form">
+                        <div class="input_field">
+                            <input type="text" id= "std_id" placeholder="Student ID" required>
+                            <i class="fa-solid fa-id-badge icon"></i>
+                        </div>
+                        <div class="input_field">
+                            <input type="password" id= "pass" placeholder="Password" required>
+                            <i class="fa-solid fa-lock icon"></i>
+                        </div>
+                        <div class="input_field">
+                            <input type="password" id= "pass" placeholder="Confirm Password" required>
+                            <i class="fa-solid fa-lock icon"></i>
+                        </div>
+                        <div class="input_field">
+                            <button class="sign_up_btn">Sign Up</button>
+                        </div>
+                        <div class="login" style="margin-top: 10px;">
+                            <span class="nam">Have an account?</span>
+                            <a href="customer-profile.html" class="login_link">Login</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
